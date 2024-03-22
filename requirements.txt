@@ -1,0 +1,3 @@
+spacy   # Library for Sentiment and Semantic Analysis
+lingua-language-detector    # Library for Language detection
+
