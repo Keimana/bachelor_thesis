@@ -1,7 +1,10 @@
-"# Thesis Program"
+# Thesis Program
+---
 
 
-Setting Up Environment (Using CMD):
+### Setting Up Environment (Using CMD):
+---
+```
     |
     |-> Create Virtual Environment
     |       |-> python -m venv .env
@@ -16,4 +19,5 @@ Setting Up Environment (Using CMD):
     |
     |-> Intall Language Detector
     |       |-> pip install lingua-language-detector
+```
 
