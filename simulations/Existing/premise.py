@@ -1,6 +1,6 @@
 """ 
     This program is for simulating the outputs and premise of the research entitled 
-    'DESIGNING AN ADAPTIVE PROGRAMMING APPROACH APPLIED IN  CONTENT FILTERING IN SOCIAL MEDIA' 
+    'DESIGNING AN ADAPTIVE PROGRAMMING APPROACH APPLIED IN  CLICKBAIT FILTERING IN SOCIAL MEDIA' 
 """
 
 import tkinter as tk
