@@ -37,7 +37,7 @@ def is_clickbait(title: str) -> bool:
         return True
 
     # Check for click-inducing words
-    cbait_words = ['you won\'t believe', 'this is why', 'one simple trick', 'shocking', 'amazing']
+    cbait_words = ['you won\'t believe', 'click here', 'shocking truth']  # Add more clickbait keywords
     if any(word.lower() in title.lower() for word in cbait_words):
         return True
 
@@ -49,7 +49,7 @@ def is_clickbait(title: str) -> bool:
 
 # Iterate Hthrough the rows of the DataFrame and classify the title
 for index, row in df.iterrows():
-    if is_clickbait(row['title']):
+    if is_clickbait(row['headline_text']):
         df.at[index, 'tag'] = 'Clickbait'
     else:
         df.at[index, 'tag'] = 'Genuine'
@@ -57,7 +57,7 @@ for index, row in df.iterrows():
 # Create a new DataFrame with the desired columns
 new_df = pd.DataFrame({
     'text_num': [f'post_{i+1}' for i in range(len(df))],
-    'title': df['title'],
+    'headline_text': df['headline_text'],
     'tag': df['tag']
 })
 
